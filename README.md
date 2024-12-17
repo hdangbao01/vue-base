@@ -24,7 +24,7 @@ npm run dev
 npm run build
 ```
 
-### Compile and Minify for Production
+### Folder
 
 * api/: Quản lý các hàm để call API
 * assets/: Các tài nguyên tĩnh như hình ảnh, icon, css
