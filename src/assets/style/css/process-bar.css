@@ -1,0 +1,10 @@
+#process {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #15B79E;
+    z-index: 999999;
+    transition: width 0.2s;
+}

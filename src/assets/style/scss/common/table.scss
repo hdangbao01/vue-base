@@ -1,0 +1,83 @@
+.table-main {
+    @include text-style(14px, 20px, 500, $Gray-modern-800);
+    width: 100%;
+    border: 1px solid $Gray-modern-200;
+    border-radius: 12px;
+    background: $Base-White;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    // overflow: hidden;
+
+    .table-title {
+        @include text-style(18px, 28px, 600, $Gray-modern-800);
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        span {
+            padding: 2px 8px;
+            border-radius: 9999px;
+            border: 1px solid $Gray-modern-200;
+            background: $Gray-modern-50;
+            @include text-style(12px, 18px, 500, $Gray-modern-700);
+        }
+    }
+
+    .table-filter {
+        border-top: 1px solid $Gray-modern-200;
+        padding: 16px 24px;
+    }
+}
+
+.table-scroll {    
+    overflow-y: auto;
+
+    .table-wrapper {
+        width: 100%;
+        table-layout: auto;
+
+        .table-head {
+            border-top: 1px solid $Gray-modern-200;
+            border-bottom: 1px solid $Gray-modern-200;
+            background: $Gray-modern-50;
+            
+            th {
+                @include text-style(13px, 18px, 600, $Gray-modern-600);
+                width: calc(100% / 4);
+                padding: 12px 24px;
+                text-align: start;
+            }
+        }
+
+        .table-body {
+            
+            td {
+                width: calc(100% / 4);
+                padding: 16px 24px;
+            }
+
+            tr + tr {
+                border-top: 1px solid $Gray-modern-200;
+            }
+        }
+    }
+}
+
+.table-foot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $Gray-modern-200;
+    padding: 12px 24px 16px 24px;
+
+    .btn-next {
+        transform: rotate(180deg);
+    }
+}
+
+.text-overflow {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

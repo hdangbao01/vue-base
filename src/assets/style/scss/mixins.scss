@@ -1,0 +1,70 @@
+@mixin text-style($fontSize, $lineHeight, $fontWeight, $textColor) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+    font-style: normal;
+    color: $textColor;
+}
+
+@mixin font-error() {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    font-style: normal;
+    color: $Error-500;
+}
+
+@mixin font-small-thin() {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    font-style: normal;
+    color: $Gray-modern-800;
+}
+
+@mixin font-small() {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    font-style: normal;
+    color: $Gray-modern-800;
+}
+
+@mixin font-normal-thin() {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-style: normal;
+    color: $Gray-modern-800;
+}
+
+@mixin font-normal() {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-style: normal;
+    color: $Gray-modern-800;
+}
+
+@mixin font-medium() {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-style: normal;
+    color: $Gray-modern-800;
+}
+
+@mixin font-large() {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    font-style: normal;
+    color: $Gray-modern-800;
+}
+
+@mixin text-overflow($line) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
